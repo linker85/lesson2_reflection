@@ -1,0 +1,44 @@
+What happens when you initialize a repository? 
+You create a stage without any commit.
+Why do you need to do it?
+You may not want to commit a file(s).
+
+How is the staging area different from the working directory and the repository?
+Staging area is like a virtual space and a middle man between the working directory and the repository.
+What value do you think it offers?
+It lets you have your work ready to be uploaded without uploading something till you are satisfied with your changes.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+A user can decide which files he or she would add to the commit by the git add command which chooses the files to add to the staging area.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+When n-people need to work on different modules and at the same time they need to modify the same code. It helps you by letting you work in parallel without affecting each other till you merge the branches.
+
+How do the diagrams help you visualize the branch structure?
+They help you to understand branches more easy.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+Merging adds all the recent commits together to a single branch. 
+
+What are the pros and cons of Git´s automatic merging vs. always doing merges
+manually?
+
+You may also wish to run git status after you have created the file. You should see that now both files are listed as untracked files.
+Pros
+Automatic merging can save the programmer a lot of time by reducing the time needed in merging two branches.
+
+Cons
+Since Git is not a high-intelligence machine, the code could have weird endings.
+
+C:\Users\linke_000\workspace\Git udacity\lesson_2_reflections>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        lesson_2_reflections.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
